@@ -2,8 +2,8 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="outer h-[200vh]">
-      
+    <div className="outer">
+      <div className="hero-main"></div>
     </div>
   );
 }
