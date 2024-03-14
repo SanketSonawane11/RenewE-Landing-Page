@@ -15,6 +15,8 @@ export default {
     },
   },
   plugins: [require("daisyui")],
+  
+  // This is pasted form DaisyUi documentation
   daisyui: {
     themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "light", // name of one of the included themes for dark mode

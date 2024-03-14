@@ -7,7 +7,7 @@ import Hero from "./Components/Hero";
 function App() {
   return (
     <div className="main-body">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero/>
     </div>
   );

@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 * {
   border: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Inter";
   font-size: 1vw;
   color: #2a2a2a;
@@ -12,20 +12,18 @@
 /* Body  */
 
 .main-body {
-  width: 98.9vw;
+  width: 100vw;
   height: fit-content;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
+  overflow: hidden;
 }
 
-.outer {
-  width: 97vw;
-  margin: 1vw;
-  display: flex;
-  align-items: center;
+/* .outer {
+  width: 100vw;
   flex-direction: column;
-}
+} */
 
 /* Navbar Starts */
 
@@ -47,9 +45,10 @@
 .logo {
   width: 10vw;
   height: 3vw;
+  margin: 1vw 0;
   text-align: center;
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 .nav-links {
@@ -71,40 +70,127 @@
 
 /* Navbar Ends */
 
+/* --------------------------------------------------------------------------------- */
+
 /* Hero Starts */
 
-.hero-main .outer {
+.hero-main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  flex-direction: column;
+}
+
+.hero-content {
   width: 100vw;
   height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-effect {
+  width: 40%;
+  height: 40vh;
+  position: absolute;
+  top: 2vw;
+  left: 0;
+  background: radial-gradient(circle, lightgreen, transparent);
+  filter: blur(100px);
+}
+
+.hero-content .text-column {
+  width: 50%;
+  height: 40vw;
+  border-radius: 1.5vw;
+  background-color: #faffee;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2vw;
+  margin: 0 10vw 0 0;
+}
+
+.text-column .headings {
+  margin: 7vw 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.text-column button {
+  width: 10vw;
+  height: 2.3vw;
+  font-size: 1.2vw;
+  border-radius: 0.7vw;
+  background-color: green;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.text-column button:hover {
+  border: 2px solid green;
+  border-radius: 0.3vw;
+  background-color: transparent;
+  color: green;
+  font-weight: 600;
+  scale: 1.05;
+}
+
+.text-column .info {
+  width: 70%;
+  height: fit-content;
+  padding: 1vw;
+  background-color: #858585ac;
+  border-radius: 0.7vw;
+  font-size: 1.2vw;
+}
+
+.hero-content .img-column {
+  width: 45%;
+  height: 100%;
+  /* border: 2px solid #2a2a2a; */
+  border-radius: 1.5vw;
+  overflow: hidden;
+  background: url("../public/investment-fund-abstract-concept-vector-illustration-investment-trust-shareholder-scheme-fund-creati/20945426.jpg")
+    center no-repeat;
+  background-size: cover;
 }
 
 /* Hero Ends */
 
 /* background #101826 */
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* Responsive ---------------------------------------------------------*/
 
 /* Mobile */
 
 @media screen and (max-width: 768px) {
-  .nav-main{
+  .nav-main {
     background-color: transparent;
     margin: 2vw;
     height: 5vh;
     margin: 5vw 0;
   }
 
-  .logo{
-    font-size: 6vw;
+  .logo {
+    font-size: 7vw;
     width: 25vw;
-    height: 4.5vh;
+    height: 10vw;
   }
-  
-  .nav-links{
+
+  /* .nav-links {
     display: none;
   }
 
-  .menu-icon{
+  .menu-icon {
     width: 15vw;
     height: 15vw;
     display: flex;
@@ -112,12 +198,75 @@
     justify-content: center;
   }
 
-  .mobile-menu{
+  .mobile-menu {
     position: fixed;
     top: 5vh;
     width: 100vw;
     height: 95vh;
     background-color: #fff;
+  } */
+
+  .hero-main {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .hero-main .text-column {
+    width: 100%;
+    height: fit-content;
+    padding: 10vw 5vw 3vw 5vw;
+    margin: 0;
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-column .headings {
+    width: 100%;
+    height: fit-content;
+    margin: 0 0 3vw 0;
+    /* border: 2px solid #2a2a2a; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .text-column button {
+    width: 20vw;
+    height: 6vw;
+    margin: 2vw 0;
+    font-size: 2vw;
+    border-radius: 2vw;
+    background-color: navy;
+    color: #fff;
+  }
+
+  .text-column .info {
+    width: 50%;
+    height: fit-content;
+    font-size: 2.5vw;
+    margin: 1vw 0;
+  }
+
+  .hero-content .img-column {
+    display: none;
+  }
+
+  .questions {
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
 
 }
