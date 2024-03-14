@@ -20,7 +20,7 @@ function Hero() {
                 Elevate Your Reach in Renewable Energy markets
               </h1>
               <h3 className="font-[#2a2a2a] font-medium text-[5vw] md:text-[1.5vw]">
-                Targeted <u className="text-[1.5vw] text-green-600">Advertising Solutions</u> tailored <u className="text-[1.5vw] text-green-600">for you</u> in the
+                Targeted <u className="text-[5vw] md:text-[1.5vw] text-green-600">Advertising Solutions</u> tailored <u className="text-[5vw] md:text-[1.5vw] text-green-600">for you</u> in the
                 Renewable Energy Sector
               </h3>
             </div>
