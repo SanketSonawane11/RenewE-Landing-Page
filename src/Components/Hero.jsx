@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 
 function Hero() {
-
   const urls = [
     "Spending too much on marketing?",
     "Not able to reach your Industry Specific audience?",
@@ -12,8 +11,7 @@ function Hero() {
   return (
     <div className="outer">
       <div className="hero-main">
-        <div className="bg-effect"></div>
-        <div className="logo">RenewE</div>
+        {/* <BgEffect top={2} left={0}/> */}
 
         <div className="hero-content">
           <div className="text-column">
@@ -22,7 +20,7 @@ function Hero() {
                 Elevate Your Reach in Renewable Energy markets
               </h1>
               <h3 className="font-[#2a2a2a] font-medium text-[5vw] md:text-[1.5vw]">
-                Targeted Advertising Solutions Tailored for Success in the
+                Targeted <u className="text-[1.5vw] text-green-600">Advertising Solutions</u> tailored <u className="text-[1.5vw] text-green-600">for you</u> in the
                 Renewable Energy Sector
               </h3>
             </div>
@@ -33,9 +31,13 @@ function Hero() {
           </div>
 
           <div className="img-column"></div>
+          {/* <BgEffect top={30} right={0}/> */}
           <div className="h-96 carousel questions carousel-vertical rounded-box mt-[5vw] md:hidden w-[100%]">
             {urls.map((url, index) => (
-              <div className="questions carousel-item h-full text-[5vw]" key={index}>
+              <div
+                className="questions carousel-item h-full text-[5vw]"
+                key={index}
+              >
                 {url}
               </div>
             ))}

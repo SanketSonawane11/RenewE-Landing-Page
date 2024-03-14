@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="nav-main">
+      <div className=" flex w-[100%] justify-between border-2 px-4 py-2 border-b shadow-md mx-auto">
         <div className="logo">RenewE</div>
 
         {/* For Large Screen */}
@@ -34,7 +34,7 @@ function Navbar() {
             </li>
           ))}
 
-          <button className="btn bg-pri-green hover:bg-pri-greenHover hover:scale-105  ease-out btn-md sm:btn-lg md:btn-md lg:btn-md">
+          <button className="px-[2vw] py-[1vw] bg-green-500 hover:bg-transparent hover:border-4 border-green-500 hover:scale-105 hover:rounded-lg transition-all ease-out duration-200 hover:text-slate-700">
             Start Advertising Now
           </button>
         </ul>
@@ -43,8 +43,10 @@ function Navbar() {
         <div className="flex-none w-[15vw] h-[15vw] md:hidden">
           <button
             className="btn btn-square btn-ghost w-[10vw] h-[10vw]"
-            onClick={() => {setshowMenu(!showMenu)
-            console.log(showMenu)}}
+            onClick={() => {
+              setshowMenu(!showMenu);
+              console.log(showMenu);
+            }}
           >
             <svg
               fill="none"
