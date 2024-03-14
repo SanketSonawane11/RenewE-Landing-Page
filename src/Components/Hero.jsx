@@ -18,10 +18,10 @@ function Hero() {
         <div className="hero-content">
           <div className="text-column">
             <div className="headings">
-              <h1 className="font-[#2a2a2a] font-semibold text-[5vw] md:text-[2.5vw]">
-                Elevate Your Reach in Renewable Energy markets{" "}
+              <h1 className="font-[#2a2a2a] font-semibold text-[10vw] md:text-[2.5vw]">
+                Elevate Your Reach in Renewable Energy markets
               </h1>
-              <h3 className="font-[#2a2a2a] font-medium text-[3vw] md:text-[1.5vw]">
+              <h3 className="font-[#2a2a2a] font-medium text-[5vw] md:text-[1.5vw]">
                 Targeted Advertising Solutions Tailored for Success in the
                 Renewable Energy Sector
               </h3>
