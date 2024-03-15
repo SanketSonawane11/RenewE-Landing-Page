@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { IconTrendingUp } from "@tabler/icons-react";
 
 function Hero() {
   const urls = [
@@ -16,18 +17,31 @@ function Hero() {
         <div className="hero-content">
           <div className="text-column">
             <div className="headings">
-              <h1 className="font-[#2a2a2a] font-semibold text-[10vw] md:text-[2.5vw]">
-                Elevate Your Reach in Renewable Energy markets
+              <h1 className=" font-[#2a2a2a] font-semibold text-[10vw] md:text-[2.5vw]">
+                <b className="text-[2.5vw] text-green-500">
+                  Save Money & Generate Leads{" "}
+                </b>{" "}
+                with targeted ads for your Industry.
+                <IconTrendingUp
+                  className="text-[10vw] md:text-[2.5vw] text-green-500"
+                  stroke={2}
+                />
               </h1>
               <h3 className="font-[#2a2a2a] font-medium text-[5vw] md:text-[1.5vw]">
-                Targeted <u className="text-[5vw] md:text-[1.5vw] text-green-600">Advertising Solutions</u> tailored <u className="text-[5vw] md:text-[1.5vw] text-green-600">for you</u> in the
-                Renewable Energy Sector
+                Targeted{" "}
+                <u className="text-[5vw] md:text-[1.5vw] text-pri-orange">
+                  Advertising Solutions
+                </u>{" "}
+                tailored{" "}
+                <u className="text-[5vw] md:text-[1.5vw] text-pri-orange">
+                  for you
+                </u>{" "}
+                in the Renewable Energy Sector
               </h3>
             </div>
             <div className="actions">
               <button>Get Quote</button>
             </div>
-            <div className="info">Ithe validation show karu shakto</div>
           </div>
 
           <div className="img-column"></div>

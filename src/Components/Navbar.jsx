@@ -34,7 +34,7 @@ function Navbar() {
             </li>
           ))}
 
-          <button className="px-[2vw] py-[1vw] bg-green-500 hover:bg-transparent hover:border-4 border-green-500 hover:scale-101 hover:rounded-lg transition-all ease-out duration-200 hover:text-slate-700">
+          <button className="px-[2vw] py-[1vw] bg-pri-orange hover:bg-transparent hover:border-4 border-green-500 hover:scale-101 hover:rounded-lg transition-all ease-out duration-200 hover:text-slate-700">
             Start Advertising Now
           </button>
         </ul>
