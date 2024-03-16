@@ -9,6 +9,21 @@ function Hero() {
     "Suffering from low conversion rates?",
   ];
 
+  const stats = [
+    {
+      title: "Ads Displayed",
+      value: "31K",
+    },
+    {
+      title: "New Clients",
+      value: "4,200",
+    },
+    {
+      title: "Conversion Rate (Highest in the market)",
+      value: "50%",
+    },
+  ];
+
   return (
     <div className="outer">
       <div className="hero-main">
@@ -41,21 +56,13 @@ function Hero() {
               <button>Get Quote</button>
             </div>
           </div>
-          <div className="stats stats-vertical md:stats-horizontal shadow w-[100%] h-fit text-center mb-[2vw]">
-            <div className="stat heroStat ">
-              <div className="stat-title">Downloads</div>
-              <div className="stat-value">31K</div>
-            </div>
-
-            <div className="stat heroStat">
-              <div className="stat-title">New Users</div>
-              <div className="stat-value">4,200</div>
-            </div>
-
-            <div className="stat heroStat">
-              <div className="stat-title">New Registers</div>
-              <div className="stat-value">1,200</div>
-            </div>
+          <div className="stats stats-vertical lg:stats-horizontal shadow h-fit text-center mb-[2vw]">
+            {stats.map((field, index) => (
+              <div className="stat heroStat" key={index}>
+                <div className="stat-title">{field.title}</div>
+                <div className="stat-value">{field.value}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
