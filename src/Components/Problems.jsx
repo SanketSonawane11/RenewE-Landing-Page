@@ -10,9 +10,7 @@ function Problems() {
 
   return (
     <div className="problem-outer">
-      <div className="problem-inner">
-        
-      </div>
+      <div className="problem-inner"></div>
     </div>
   );
 }

@@ -3,10 +3,6 @@ import "../App.css";
 
 function Navbar() {
   const navLinks = [
-    // {
-    //   btnName: "About Us",
-    //   link: "#",
-    // },
     {
       btnName: "Contact Us",
       link: "#",
@@ -68,18 +64,15 @@ function Navbar() {
 
       <div className="relative top=[15vw] left-[2vw] w-[100vw]">
         {showMenu && (
-          <>
-            <div className="bg-white rounded shadow-md py-3 px-6 absolute top-8 right-8 z-50 mobile-menu">
-              <h3 className="mb-3 text-[5vw] text-center font-bold uppercase tracking-widest">
-                Menu
-              </h3>
-              <hr />
-            </div>
-          </>
+          <div className="bg-white rounded shadow-md py-3 px-6 absolute top-8 right-8 z-50 mobile-menu">
+            <h3 className="mb-3 text-[5vw] text-center font-bold uppercase tracking-widest">
+              Menu
+            </h3>
+            <hr />
+          </div>
         )}
       </div>
     </>
   );
 }
-
 export default Navbar;

@@ -20,10 +20,11 @@
   overflow: hidden;
 }
 
-/* .outer {
+.outer {
   width: 100vw;
   flex-direction: column;
-} */
+  padding: 0.5dvw 1dvw;
+}
 
 /* Navbar Starts */
 
@@ -60,14 +61,20 @@
 /* Hero Starts */
 
 .hero-main {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  border-radius: 1vw;
   display: flex;
   align-items: center;
   gap: 2vw;
   flex-direction: column;
   background: url("/waterHero.jpg") center no-repeat;
   background-size: cover;
+  transition: all 0.4s ease-out;
+}
+
+.hero-main:hover {
+  scale: 1.003;
 }
 
 .hero-content {
@@ -132,6 +139,15 @@
 }
 
 /* Hero Ends */
+
+/* Testimony */
+
+.reviews-main {
+  width: 100%;
+  min-height: 25vh;
+  border: 2px solid #222;
+  /* padding: ; */
+}
 
 /* Problem Section */
 
@@ -232,13 +248,12 @@
     height: 16vw;
   }
 
-  .heroStat .stat-title{
+  .heroStat .stat-title {
     font-size: 4vw;
     font-weight: 700;
   }
 
-  .heroStat .stat-value{
+  .heroStat .stat-value {
     font-size: 5vw;
   }
-
 }
