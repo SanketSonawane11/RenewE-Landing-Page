@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { IconTrendingUp } from "@tabler/icons-react";
+import { FaChartLine } from "react-icons/fa6";
 
 function Hero() {
   const urls = [
@@ -35,10 +35,7 @@ function Hero() {
                   Save Money & Generate Leads{" "}
                 </b>{" "}
                 with targeted ads for your Industry.
-                <IconTrendingUp
-                  className="w-[10vw] md:text-[2.5vw] text-green-500"
-                  stroke={2}
-                />
+                <FaChartLine className="text-[10vw] md:text-[2.5vw] text-pri-orange"/>
               </h1>
               <h3 className="text-white font-medium text-[5vw] md:text-[1.5vw]">
                 Targeted{" "}
