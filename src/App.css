@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
   border: 0;
   padding: 0;
-  /* box-sizing: border-box; */
   font-family: "Inter";
-  font-size: 1vw;
+  font-size: 1dvw;
   color: #2a2a2a;
 }
 
 /* Body  */
 
 .main-body {
-  width: 100vw;
+  width: 100dvw;
   height: fit-content;
   display: flex;
   /* align-items: center; */
@@ -21,7 +20,7 @@
 }
 
 .outer {
-  width: 100vw;
+  width: 100dvw;
   flex-direction: column;
   padding: 0.5dvw 1dvw;
 }
@@ -29,18 +28,18 @@
 /* Navbar Starts */
 
 .logo {
-  width: 10vw;
-  height: 3vw;
-  margin: 1vw 0;
+  width: 10dvw;
+  height: 3dvw;
+  margin: 1dvw 0;
   text-align: center;
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 2dvw;
 }
 
 .nav-links {
-  width: 35vw;
+  width: 35dvw;
   display: flex;
-  gap: 1.5vw;
+  gap: 1.5dvw;
   align-items: center;
   justify-content: space-between;
   color: #fff;
@@ -63,10 +62,10 @@
 .hero-main {
   width: 100%;
   height: 100vh;
-  border-radius: 1vw;
+  border-radius: 1dvw;
   display: flex;
   align-items: center;
-  gap: 2vw;
+  gap: 2dvw;
   flex-direction: column;
   background: url("/waterHero.jpg") center no-repeat;
   background-size: cover;
@@ -78,10 +77,10 @@
 }
 
 .hero-content {
-  width: 100vw;
+  width: 100dvw;
   height: fit-content;
   display: flex;
-  padding: 0 3vw 3vw 3vw;
+  padding: 0 3dvw 3dvw 3dvw;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -90,35 +89,35 @@
 .hero-content .text-column {
   width: 100%;
   min-height: 20vh;
-  border-radius: 1.5vw;
+  border-radius: 1.5dvw;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  padding: 6vw 2vw;
+  padding: 6dvw 2dvw;
 }
 
 .text-column .headings {
-  margin: 2vw 0 0 0;
+  margin: 2dvw 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: 3vw;
+  gap: 3dvw;
   color: #fff;
 }
 
 .text-column button {
-  width: 10vw;
-  height: 2.3vw;
-  font-size: 1.2vw;
-  border-radius: 0.7vw;
+  width: 10dvw;
+  height: 2.3dvw;
+  font-size: 1.2dvw;
+  border-radius: 0.7dvw;
   background-color: #22c55e;
   color: #fff;
-  margin: 1vw 0 0 0;
+  margin: 1dvw 0 0 0;
   transition: all 0.4s ease-out;
 }
 
 .text-column button:hover {
   border: 2px solid #22c55e;
-  border-radius: 0.3vw;
+  border-radius: 0.3dvw;
   background-color: transparent;
   color: #22c55e;
   font-weight: 600;
@@ -132,10 +131,10 @@
 .text-column .info {
   width: 70%;
   height: fit-content;
-  padding: 1vw;
+  padding: 1dvw;
   background-color: #858585ac;
-  border-radius: 0.7vw;
-  font-size: 1.2vw;
+  border-radius: 0.7dvw;
+  font-size: 1.2dvw;
 }
 
 /* Hero Ends */
@@ -145,8 +144,31 @@
 .reviews-main {
   width: 100%;
   min-height: 25vh;
-  border: 2px solid #222;
-  /* padding: ; */
+  padding: 2dvw 9.6dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2vw;
+}
+
+.review-cards{
+  width: 100%;
+  height: 30dvw;
+  border-radius: 1dvw;
+  padding: 1vw;
+  overflow: auto;
+  scrollbar-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  width: 20dvw;
+  height: 95%;
+  padding: 1dvw;
+  box-shadow: var(--boxShadow);
 }
 
 /* Problem Section */
@@ -162,17 +184,17 @@
 @media screen and (max-width: 768px) {
   .nav-main {
     background-color: transparent;
-    margin: 2vw;
+    margin: 2dvw;
     height: 5vh;
-    margin: 5vw 0;
+    margin: 5dvw 0;
   }
 
   .logo {
-    font-size: 7vw;
-    width: 100vw;
-    height: 10vw;
+    font-size: 7dvw;
+    width: 100dvw;
+    height: 10dvw;
     background-color: lightgreen;
-    margin: 0 0 5vw 0;
+    margin: 0 0 5dvw 0;
     display: none;
   }
 
@@ -181,8 +203,8 @@
   }
 
   .menu-icon {
-    width: 15vw;
-    height: 15vw;
+    width: 15dvw;
+    height: 15dvw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +213,7 @@
   .mobile-menu {
     position: fixed;
     top: 5vh;
-    width: 100vw;
+    width: 100dvw;
     height: 95vh;
     background-color: #fff;
   }
@@ -211,12 +233,12 @@
   .hero-main .text-column {
     width: 120%;
     height: fit-content;
-    padding: 10vw 5vw 3vw 5vw;
+    padding: 10dvw 5dvw 3dvw 5dvw;
     margin: 0;
-    border-radius: 5vw;
+    border-radius: 5dvw;
     display: flex;
     justify-content: center;
-    gap: 5vw;
+    gap: 5dvw;
     flex-direction: column;
     background: transparent;
   }
@@ -224,36 +246,43 @@
   .text-column .headings {
     width: 100%;
     height: fit-content;
-    margin: 0 0 3vw 0;
+    margin: 0 0 3dvw 0;
     /* border: 2px solid #2a2a2a; */
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5vw;
+    gap: 5dvw;
     color: #fff;
   }
 
   .text-column button {
-    width: 40vw;
-    height: 12vw;
-    /* margin: 2vw 0; */
-    font-size: 5vw;
-    border-radius: 2vw;
+    width: 40dvw;
+    height: 12dvw;
+    /* margin: 2dvw 0; */
+    font-size: 5dvw;
+    border-radius: 2dvw;
     background-color: #22c55e;
     color: #fff;
   }
 
   .heroStat {
-    height: 16vw;
+    height: 16dvw;
   }
 
   .heroStat .stat-title {
-    font-size: 4vw;
+    font-size: 4dvw;
     font-weight: 700;
   }
 
   .heroStat .stat-value {
-    font-size: 5vw;
+    font-size: 5dvw;
+  }
+
+  .review-cards{
+    height: fit-content;
+    padding: 3vw 0;
+    gap:  5dvw;
+    flex-direction: column;
   }
 }
