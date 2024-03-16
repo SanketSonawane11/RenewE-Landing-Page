@@ -12,22 +12,20 @@ function Hero() {
   return (
     <div className="outer">
       <div className="hero-main">
-        {/* <BgEffect top={2} left={0}/> */}
-
         <div className="hero-content">
           <div className="text-column">
             <div className="headings">
-              <h1 className=" font-[#2a2a2a] font-semibold text-[10vw] md:text-[2.5vw]">
-                <b className="text-[2.5vw] text-green-500">
+              <h1 className=" text-white font-semibold text-[10vw] md:text-[2.5vw]">
+                <b className="text-[10vw] md md:text-[2.5vw] text-green-500">
                   Save Money & Generate Leads{" "}
                 </b>{" "}
                 with targeted ads for your Industry.
                 <IconTrendingUp
-                  className="text-[10vw] md:text-[2.5vw] text-green-500"
+                  className="w-[10vw] md:text-[2.5vw] text-green-500"
                   stroke={2}
                 />
               </h1>
-              <h3 className="font-[#2a2a2a] font-medium text-[5vw] md:text-[1.5vw]">
+              <h3 className="text-white font-medium text-[5vw] md:text-[1.5vw]">
                 Targeted{" "}
                 <u className="text-[5vw] md:text-[1.5vw] text-pri-orange">
                   Advertising Solutions
@@ -43,18 +41,24 @@ function Hero() {
               <button>Get Quote</button>
             </div>
           </div>
+          <div className="stats stats-vertical lg:stats-horizontal shadow mb-[2vw]">
+            <div className="stat">
+              <div className="stat-title">Downloads</div>
+              <div className="stat-value">31K</div>
+              <div className="stat-desc">Jan 1st - Feb 1st</div>
+            </div>
 
-          <div className="img-column"></div>
-          {/* <BgEffect top={30} right={0}/> */}
-          <div className="h-96 carousel questions carousel-vertical rounded-box mt-[5vw] md:hidden w-[100%]">
-            {urls.map((url, index) => (
-              <div
-                className="questions carousel-item h-full text-[5vw]"
-                key={index}
-              >
-                {url}
-              </div>
-            ))}
+            <div className="stat">
+              <div className="stat-title">New Users</div>
+              <div className="stat-value">4,200</div>
+              <div className="stat-desc">↗︎ 400 (22%)</div>
+            </div>
+
+            <div className="stat">
+              <div className="stat-title">New Registers</div>
+              <div className="stat-value">1,200</div>
+              <div className="stat-desc">↘︎ 90 (14%)</div>
+            </div>
           </div>
         </div>
       </div>

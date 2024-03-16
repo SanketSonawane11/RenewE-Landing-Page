@@ -66,44 +66,36 @@
   align-items: center;
   gap: 2vw;
   flex-direction: column;
+  background: url("/waterHero.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .hero-content {
   width: 100vw;
   height: fit-content;
   display: flex;
+  padding: 0 3vw 3vw 3vw;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
 }
 
-/* .bg-effect {
-  width: 40%;
-  height: 40vh;
-  position: absolute;
-  top: 2vw;
-  left: 0;
-  background: radial-gradient(circle, lightgreen, transparent);
-  filter: blur(100px);
-} */
-
 .hero-content .text-column {
-  width: 50%;
-  height: 40vw;
+  width: 100%;
+  min-height: 20vh;
   border-radius: 1.5vw;
-  background-color: #faffee;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  padding: 2vw;
-  margin: 0 10vw 0 0;
+  padding: 6vw 2vw;
 }
 
 .text-column .headings {
-  margin: 7vw 0 0 0;
+  margin: 2vw 0 0 0;
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 3vw;
+  color: #fff;
 }
 
 .text-column button {
@@ -111,23 +103,27 @@
   height: 2.3vw;
   font-size: 1.2vw;
   border-radius: 0.7vw;
-  background-color: #22C55E;
+  background-color: #22c55e;
   color: #fff;
   margin: 1vw 0 0 0;
   transition: all 0.4s ease-out;
 }
 
 .text-column button:hover {
-  border: 2px solid #22C55E;
+  border: 2px solid #22c55e;
   border-radius: 0.3vw;
   background-color: transparent;
-  color: #22C55E;
+  color: #22c55e;
   font-weight: 600;
   scale: 1.05;
 }
 
-.text-column button:active{
+.text-column button:active {
   scale: 1;
+}
+
+.stats {
+  margin: 0 0 5vw 0;
 }
 
 .text-column .info {
@@ -137,17 +133,6 @@
   background-color: #858585ac;
   border-radius: 0.7vw;
   font-size: 1.2vw;
-}
-
-.hero-content .img-column {
-  width: 45%;
-  height: 100%;
-  /* border: 2px solid #2a2a2a; */
-  border-radius: 1.5vw;
-  overflow: hidden;
-  background: url("../public/investment-fund-abstract-concept-vector-illustration-investment-trust-shareholder-scheme-fund-creati/20945426.jpg")
-    center no-repeat;
-  background-size: cover;
 }
 
 /* Hero Ends */
@@ -221,6 +206,7 @@
     justify-content: center;
     gap: 5vw;
     flex-direction: column;
+    background: transparent;
   }
 
   .text-column .headings {
@@ -233,6 +219,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5vw;
+    color: #fff;
   }
 
   .text-column button {
@@ -241,7 +228,7 @@
     /* margin: 2vw 0; */
     font-size: 5vw;
     border-radius: 2vw;
-    background-color: #22C55E;
+    background-color: #22c55e;
     color: #fff;
   }
 
