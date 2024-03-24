@@ -163,7 +163,6 @@
 }
 
 .card{
-  border: 2px solid #2a2a2a;
   width: 20vw;
   height: 15vw;
   padding: 1vw;
@@ -297,5 +296,12 @@
     min-width: 100%;
     min-height: 100px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .card .quote{
+    display: none;
   }
 }
