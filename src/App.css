@@ -172,6 +172,15 @@
 
 /* Problem Section */
 
+.problem-inner{
+  padding: 2vw 9.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 70vh;
+  gap: 2.5vw;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -302,6 +311,16 @@
   }
 
   .card .quote{
+    display: none;
+  }
+
+  .problem-inner{
+    flex-direction: column;
+    gap: 3vw;
+    min-height: fit-content;
+  }
+
+  .problem-inner .image{
     display: none;
   }
 }
