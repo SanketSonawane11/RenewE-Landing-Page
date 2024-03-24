@@ -27,7 +27,7 @@ function Problems() {
     <div className="outer">
       <div className="problem-inner">
         <div className="flex flex-col items-center justify-center gap-2">
-          <h1 className="md:text-[2.5vw] text-[5.5vw] text-center font-semibold">
+          <h1 className="md:text-[2.5vw] text-[6vw] text-center font-semibold">
             Tired of Ineffective Advertising?
           </h1>
           <img className="image w-[40vw]" src="./Problem.jpg" />
@@ -37,15 +37,15 @@ function Problems() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="collapse p-[2vw] min-h-fit rounded-2xl hover:scale-105 hover:z-10 transition-all ease-in-out duration-200 collapse-arrow join-item border-2 border-base-300"
+              className="collapse p-[2vw] min-h-fit hover:scale-105 hover:z-10 transition-all ease-in-out duration-400 collapse-arrow active:bg-[#ffd796] join-item border-2 border-base-300"
             >
               <input type="radio" name="my-accordion-4" />
-              <div className="collapse-title flex gap-[2vw] md:gap-[2vw] justify-start items-center text-[3.7vw] md:text-[1.5vw] font-medium">
+              <div className="collapse-title flex gap-[2vw] md:gap-[2vw] justify-start items-center text-[4vw] md:text-[1.5vw] font-medium">
                 {problem.icon}
                 {problem.title}
               </div>
               <div className="collapse-content font-medium text-[#2a2a2a]">
-                <p className="md:ml-[3.5vw] ml-[5vw] md:text-[1vw] text-[3vw]">{problem.desc}</p>
+                <p className="md:ml-[3.5vw] ml-[5vw] md:text-[1vw] text-[3.5vw]">{problem.desc}</p>
               </div>
             </div>
           ))}
