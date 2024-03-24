@@ -9,17 +9,17 @@ function Problems() {
     {
       title:
         "Are you Paying High Costs for Advertisments with Low Conversion Rates?",
-      icon: <GiMoneyStack className="md:text-[2vw] text-[5vw]" />,
+      icon: <GiMoneyStack className="md:text-[2vw] text-[10vw]" />,
       desc: "Many businesses in the renewable energy sector face this challenge, resulting in wasted budget and limited returns on investment.",
     },
     {
       title: "Are you Reaching Uninterested Audiences?",
-      icon: <TbTargetArrow className="md:text-[1.5vw] text-[3.8vw]" />,
+      icon: <TbTargetArrow className="md:text-[1.5vw] text-[7vw]" />,
       desc: "Traditional advertising methods often fail to effectively target individuals and organizations within the renewable energy sector, leading to wasted resources and missed opportunities.",
     },
     {
       title: "Is your business not growing?",
-      icon: <AiOutlineAreaChart className="md:text-[1.5vw] text-[3.8vw]" />,
+      icon: <AiOutlineAreaChart className="md:text-[1.5vw] text-[4vw]" />,
       desc: "Are you struggling to gain visibility in the competitive renewable energy market? Many businesses lack the expertise needed to effectively position their products and services, resulting in limited brand visibility and missed opportunities for growth.",
     },
   ];
@@ -41,12 +41,12 @@ function Problems() {
               className="collapse p-[2vw] min-h-fit hover:border-4 hover:border-pri-orangeHover transition-all ease-in-out duration-400 collapse-arrow active:bg-[#ffd796] join-item border-2 border-base-300"
             >
               <input type="radio" name="my-accordion-4" />
-              <div className="collapse-title flex gap-[2vw] md:gap-[2vw] justify-start items-center text-[4vw] md:text-[1.5vw] font-medium">
+              <div className="collapse-title flex gap-[5vw] md:gap-[2vw] justify-start items-center text-[4vw] md:text-[1.5vw] font-medium">
                 {problem.icon}
                 {problem.title}
               </div>
               <div className="collapse-content font-medium text-[#2a2a2a]">
-                <p className="md:ml-[3.5vw] ml-[5vw] md:text-[1vw] text-[3.5vw]">
+                <p className="md:ml-[3.5vw] ml-[9vw] md:text-[1vw] text-[3.5vw]">
                   {problem.desc}
                 </p>
               </div>
