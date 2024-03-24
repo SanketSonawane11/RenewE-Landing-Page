@@ -37,7 +37,7 @@ function Problems() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="collapse hover:scale-105 hover:z-10 transition-all ease-in-out duration-200 collapse-arrow join-item border-2 border-base-300"
+              className="collapse p-[2vw] min-h-fit rounded-2xl hover:scale-105 hover:z-10 transition-all ease-in-out duration-200 collapse-arrow join-item border-2 border-base-300"
             >
               <input type="radio" name="my-accordion-4" />
               <div className="collapse-title flex gap-[2vw] md:gap-[2vw] justify-start items-center text-[3.7vw] md:text-[1.5vw] font-medium">
