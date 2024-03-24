@@ -43,13 +43,13 @@ function Testimony() {
           {review.map((user, index) => (
             <div className="card" key={index}>
               <div className="h-[40%] w-[100%]">
-                <h4 className="text-[1.1vw] font-light">{user.name}</h4>
-                <h2 className="text-[1.2vw] font-medium">
+                <h4 className="text-[2vw] md:text-[1.1vw] font-light">{user.name}</h4>
+                <h2 className=" text-[2.5vw] md:text-[1.2vw] font-medium">
                   - {user.position} at {user.company}
                 </h2>
               </div>
-              <p className="text-[1vw] flex gap-2">
-                <FaQuoteLeft className="text-[1vw]" />
+              <p className="md:text-[1vw] flex gap-2">
+                <FaQuoteLeft className="md:text-[1vw]" />
                 {user.testimonial}
               </p>
             </div>
