@@ -10,7 +10,7 @@ export default {
         'pri-green': '#36943C',
         'pri-greenHover': '#46924B',
         'pri-orange': '#FE6700',
-        'pri-orange': '#FE6700'
+        'pri-orangeHover': '#FE66004E'
       }
     },
   },

@@ -7,7 +7,8 @@ import { TbTargetArrow } from "react-icons/tb";
 function Problems() {
   const problems = [
     {
-      title: "Are you Paying High Costs for Advertisments with Low Conversion Rates?",
+      title:
+        "Are you Paying High Costs for Advertisments with Low Conversion Rates?",
       icon: <GiMoneyStack className="md:text-[2vw] text-[5vw]" />,
       desc: "Many businesses in the renewable energy sector face this challenge, resulting in wasted budget and limited returns on investment.",
     },
@@ -37,7 +38,7 @@ function Problems() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="collapse p-[2vw] min-h-fit hover:scale-105 hover:z-10 transition-all ease-in-out duration-400 collapse-arrow active:bg-[#ffd796] join-item border-2 border-base-300"
+              className="collapse p-[2vw] min-h-fit hover:border-4 hover:border-pri-orangeHover transition-all ease-in-out duration-400 collapse-arrow active:bg-[#ffd796] join-item border-2 border-base-300"
             >
               <input type="radio" name="my-accordion-4" />
               <div className="collapse-title flex gap-[2vw] md:gap-[2vw] justify-start items-center text-[4vw] md:text-[1.5vw] font-medium">
@@ -45,7 +46,9 @@ function Problems() {
                 {problem.title}
               </div>
               <div className="collapse-content font-medium text-[#2a2a2a]">
-                <p className="md:ml-[3.5vw] ml-[5vw] md:text-[1vw] text-[3.5vw]">{problem.desc}</p>
+                <p className="md:ml-[3.5vw] ml-[5vw] md:text-[1vw] text-[3.5vw]">
+                  {problem.desc}
+                </p>
               </div>
             </div>
           ))}
