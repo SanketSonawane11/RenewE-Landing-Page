@@ -41,7 +41,6 @@ function Navbar() {
             className="btn btn-square btn-ghost w-[10vw] h-[10vw]"
             onClick={() => {
               setshowMenu(!showMenu);
-              console.log(showMenu);
             }}
           >
             <svg
@@ -69,6 +68,7 @@ function Navbar() {
               Menu
             </h3>
             <hr />
+
           </div>
         )}
       </div>

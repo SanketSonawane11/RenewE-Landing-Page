@@ -7,10 +7,10 @@ function Problems() {
     "Not able to reach your Industry Specific audience?",
     "Suffering from low conversion rates?",
   ];
-
+  
   return (
     <div className="problem-outer">
-      <div className="problem-inner"></div>
+      <div className="problem-inner">Sahwljkwds</div>
     </div>
   );
 }
